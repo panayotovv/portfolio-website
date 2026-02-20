@@ -5,6 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="src/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script>
+    (function() {
+      const url = new URL(window.location.href);
+      if (url.search) {
+        window.history.replaceState({}, document.title, url.origin + url.pathname);
+      }
+    })();
+    </script>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
