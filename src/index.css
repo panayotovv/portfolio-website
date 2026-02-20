@@ -492,4 +492,9 @@ h1 {
   .hero-text p{
     font-size: 0.8rem;
   }
+
+  .nav ul{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+  }
 }
