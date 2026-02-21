@@ -105,7 +105,7 @@ function Skills() {
               ["devicon-git-plain", "Git"],
               ["devicon-vscode-plain", "VS Code"],
               ["devicon-pycharm-plain", "PyCharm"],
-              ["devicon-figma-plain", "Figma"],
+              ["devicon-sqlalchemy-plain", "SQLAlchemy"],
               ["devicon-tailwindcss-original", "Tailwind CSS"],
               ["devicon-postgresql-plain", "PostgreSQL"],
             ],
