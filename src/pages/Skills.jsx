@@ -96,7 +96,7 @@ function Skills() {
             title: "Hosting Platforms",
             tools: [
               ["devicon-vercel-original", "Vercel"],
-              ["devicon-netlify-plain", "Netlify"]
+              ["devicon-netlify-plain", "Netlify"],
             ],
           },
           {
