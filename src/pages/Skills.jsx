@@ -89,7 +89,6 @@ function Skills() {
               ["devicon-djangorest-plain", "Django REST"],
               ["devicon-fastapi-plain", "FastAPI"],
               ["devicon-react-original", "React"],
-              ["devicon-nodejs-plain-wordmark", "Node.js"],
             ],
           },
           {
