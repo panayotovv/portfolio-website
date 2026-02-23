@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
+
 function Skills() {
   const [activeIndex, setActiveIndex] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -94,9 +95,8 @@ function Skills() {
           {
             title: "Hosting Platforms",
             tools: [
-              ["devicon-firebase-plain", "Firebase"],
               ["devicon-vercel-original", "Vercel"],
-              ["devicon-amazonwebservices-plain-wordmark", "AWS"],
+              ["devicon-netlify-plain", "Netlify"]
             ],
           },
           {
