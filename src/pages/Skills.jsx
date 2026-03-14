@@ -87,7 +87,6 @@ function Skills() {
             tools: [
               ["devicon-django-plain", "Django"],
               ["devicon-djangorest-plain", "Django REST"],
-              ["devicon-fastapi-plain", "FastAPI"],
               ["devicon-react-original", "React"],
             ],
           },
@@ -104,7 +103,6 @@ function Skills() {
               ["devicon-git-plain", "Git"],
               ["devicon-vscode-plain", "VS Code"],
               ["devicon-pycharm-plain", "PyCharm"],
-              ["devicon-sqlalchemy-plain", "SQLAlchemy"],
               ["devicon-tailwindcss-original", "Tailwind CSS"],
               ["devicon-postgresql-plain", "PostgreSQL"],
             ],
