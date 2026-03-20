@@ -83,6 +83,16 @@ function Skills() {
       <section className="right-details" ref={containerRef}>
         {[
           {
+            title: "Languages",
+            tools: [
+              ["devicon-python-plain", "Python"],
+              ["devicon-javascript-plain", "JavaScript"],
+              ["devicon-html5-plain", "HTML5"],
+              ["devicon-css3-plain", "CSS3"],
+              ["devicon-azuresqldatabase-plain", "SQL"],
+            ],
+          },
+          {
             title: "Frameworks",
             tools: [
               ["devicon-django-plain", "Django"],
@@ -91,30 +101,16 @@ function Skills() {
             ],
           },
           {
-            title: "Hosting Platforms",
-            tools: [
-              ["devicon-vercel-original", "Vercel"],
-              ["devicon-netlify-plain", "Netlify"],
-            ],
-          },
-          {
             title: "Tools",
             tools: [
               ["devicon-git-plain", "Git"],
+              ["devicon-github-original", "GitHub"],
               ["devicon-vscode-plain", "VS Code"],
               ["devicon-pycharm-plain", "PyCharm"],
-              ["devicon-tailwindcss-original", "Tailwind CSS"],
               ["devicon-postgresql-plain", "PostgreSQL"],
-            ],
-          },
-          {
-            title: "Languages",
-            tools: [
-              ["devicon-python-plain", "Python"],
-              ["devicon-javascript-plain", "JavaScript"],
-              ["devicon-html5-plain", "HTML5"],
-              ["devicon-css3-plain", "CSS3"],
-              ["devicon-azuresqldatabase-plain", "SQL"],
+              ["devicon-docker-plain", "Docker"],
+              ["devicon-vercel-original", "Vercel"],
+              ["devicon-postman-plain", "Postman"],
             ],
           },
         ].map((section, index) => (
