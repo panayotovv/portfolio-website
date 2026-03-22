@@ -50,10 +50,9 @@ function Skills() {
   };
 
   const leftItems = [
-    "Frameworks",
-    "Hosting Platforms",
-    "Tools",
     "Languages",
+    "Frameworks",
+    "Tools",
   ];
 
   return (
