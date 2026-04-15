@@ -147,7 +147,7 @@ canvas {
   backdrop-filter: var(--blur-sm);
 }
 
-.nav ul li {
+.nav ul li a{
   opacity: 0.7;
   font-size: 0.8rem;
   text-align: center;
@@ -155,7 +155,12 @@ canvas {
   transition: var(--transition);
 }
 
-.nav ul li:hover {
+.nav ul li a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.nav ul li a.active{
   opacity: 1;
   transform: scale(1.1);
 }

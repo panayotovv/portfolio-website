@@ -4,22 +4,22 @@ function Navbar() {
   return (
     <nav className="nav" aria-label="Main Navigation">
       <ul>
-        <li>
-          <NavLink to="/" end>
+        <li> 
+          <NavLink to="/" end className={({ isActive }) => (isActive ? "active" : "")}>
             <i className="fa-solid fa-house" />
             <span>Home</span>
           </NavLink>
         </li>
 
         <li>
-          <NavLink to="/skills">
+          <NavLink to="/skills" className={({ isActive }) => (isActive ? "active" : "")}>
             <i className="fa-solid fa-feather" />
             <span>Skills</span>
           </NavLink>
         </li>
 
         <li>
-          <NavLink to="/about">
+          <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>
             <i className="fa-solid fa-user" />
             <span>About</span>
           </NavLink>
