@@ -3,10 +3,29 @@ import { useState, useRef, useEffect } from "react";
 function About() {
   const [activeIndex, setActiveIndex] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
+  const fullText = "developer.building(systematic_solutions)";
+  const [typedText, setTypedText] = useState("");
+  const [typingDone, setTypingDone] = useState(false);
 
   const mainRef = useRef(null);
   const containerRef = useRef(null);
   const sectionRefs = useRef([]);
+
+
+  useEffect(() => {
+    let i = 0;
+
+    const interval = setInterval(() => {
+      setTypedText(fullText.slice(0, i + 1));
+      i++;
+
+      if (i === fullText.length) {
+        clearInterval(interval);
+        setTypingDone(true);
+      }
+    }, 60); 
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -144,9 +163,10 @@ function About() {
         <div className="left-details">
           <h1>Mihail Panayotov</h1>
 
-          <div className="terminal-line">
-            developer.building(systematic_solutions)
-          </div>
+        <div className="terminal-line">
+          {typedText}
+          {typingDone ? null : <span className={`cursor ${typingDone ? "blink" : ""}`}>|</span>}
+        </div>
 
           <div className="left-tools">
             {sections.map((section, index) => (

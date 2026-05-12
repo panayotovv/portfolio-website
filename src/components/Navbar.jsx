@@ -26,14 +26,10 @@ function Navbar() {
         </li>
 
         <li>
-          <a
-            href="https://github.com/panayotovv"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-github" />
-            <span>GitHub</span>
-          </a>
+          <NavLink to="/projects" className={({ isActive }) => (isActive ? "active" : "")}>
+            <i className="fa-solid fa-folder"/>
+            <span>Projects</span>
+          </NavLink>
         </li>
       </ul>
     </nav>

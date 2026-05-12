@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 
-
 function Skills() {
   const [activeIndex, setActiveIndex] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -14,7 +13,7 @@ function Skills() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); 
+          observer.disconnect();
         }
       },
       {
@@ -49,11 +48,7 @@ function Skills() {
     }
   };
 
-  const leftItems = [
-    "Languages",
-    "Frameworks",
-    "Tools",
-  ];
+  const leftItems = ["Languages", "Frameworks", "Tools"];
 
   return (
     <main
@@ -96,7 +91,9 @@ function Skills() {
             tools: [
               ["devicon-django-plain", "Django"],
               ["devicon-djangorest-plain", "Django REST"],
+              ["devicon-fastapi-plain", "FastAPI"],
               ["devicon-react-original", "React"],
+              ["devicon-tailwindcss-original", "Tailwind CSS"],
             ],
           },
           {
@@ -116,9 +113,7 @@ function Skills() {
           <section
             key={index}
             ref={(el) => (sectionRefs.current[index] = el)}
-            className={`right-box ${
-              activeIndex === index ? "active" : ""
-            }`}
+            className={`right-box ${activeIndex === index ? "active" : ""}`}
           >
             <h1>{section.title}</h1>
             <div className="right-tools">

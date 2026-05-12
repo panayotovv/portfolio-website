@@ -503,3 +503,38 @@ h1 {
     backdrop-filter: blur(20px);
   }
 }
+
+.typing {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.cursor {
+  margin-left: 2px;
+}
+
+.blink {
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.project-card:hover {
+  background: var(--glass-bg-medium);
+  border-color: var(--glass-border-medium);
+}
