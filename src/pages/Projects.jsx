@@ -212,7 +212,7 @@ export default function Projects() {
                   borderRadius: "0.6rem",
                 }}
               >
-                GitHub ↗
+                GitHub
               </a>
               {project.demo && (
                 <a
