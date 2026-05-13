@@ -7,11 +7,9 @@ export default function Starfield() {
   useEffect(() => {
     if (!mountRef.current) return;
 
-    // SCENE
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x000000);
 
-    // CAMERA
     const camera = new THREE.PerspectiveCamera(
       75,
       window.innerWidth / window.innerHeight,
@@ -20,13 +18,11 @@ export default function Starfield() {
     );
     camera.position.z = 0;
 
-    // RENDERER
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
     mountRef.current.appendChild(renderer.domElement);
 
-    // STARS
     const starCount = 1500;
     const starGeometry = new THREE.BufferGeometry();
     const positions = new Float32Array(starCount * 3);
@@ -58,7 +54,6 @@ export default function Starfield() {
     const stars = new THREE.Points(starGeometry, starMaterial);
     scene.add(stars);
 
-    // ANIMATION
     let animationId;
 
     const animate = () => {
@@ -86,7 +81,6 @@ export default function Starfield() {
 
     animate();
 
-    // RESIZE
     const handleResize = () => {
       const width = window.innerWidth;
       const height = window.innerHeight;
@@ -98,7 +92,6 @@ export default function Starfield() {
 
     window.addEventListener("resize", handleResize);
 
-    // CLEANUP
     return () => {
       cancelAnimationFrame(animationId);
       window.removeEventListener("resize", handleResize);
