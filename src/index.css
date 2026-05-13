@@ -542,14 +542,3 @@ h1 {
   background: var(--glass-bg-medium);
   border-color: var(--glass-border-medium);
 }
-
-.left,
-.right-details {
-  will-change: transform, opacity;
-  transform-origin: center;
-  backface-visibility: hidden;
-}
-
-.hero-skills {
-  transform: translateZ(0);
-}
