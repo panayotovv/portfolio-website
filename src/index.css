@@ -17,6 +17,10 @@
   --transition: all 0.3s ease;
 }
 
+* {
+  cursor: url('src/cursor.png'), auto !important; 
+}
+
 body {
   margin: 0;
   padding: 0;
