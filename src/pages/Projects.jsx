@@ -29,7 +29,7 @@ const projects = [
     title: "Portfolio Website",
     tag: "Frontend",
     live: true,
-    desc: "Developer portfolio built in React with motion-driven animations, a procedural 3D star field via Three.js, and fluid UI transitions across all sections. Problem solved: a living, interactive resume that stands out beyond a plain PDF.",
+    desc: "Developer portfolio built in React with motion-driven animations, a procedural 3D star field via Three.js, and fluid UI transitions across all sections.",
     tech: ["React", "Three.js"],
     github: "https://github.com/panayotovv/portfolio-website",
   },
