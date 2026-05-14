@@ -107,6 +107,7 @@ function Skills() {
               ["devicon-docker-plain", "Docker"],
               ["devicon-vercel-original", "Vercel"],
               ["devicon-postman-plain", "Postman"],
+              ["devicon-sqlalchemy-plain", "SQLAlchemy"],
             ],
           },
         ].map((section, index) => (
